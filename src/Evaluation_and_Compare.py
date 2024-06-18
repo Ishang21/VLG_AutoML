@@ -79,7 +79,7 @@ def evaluate_and_compare(models, X_train, y_train, X_test, y_test, labels, cv=5)
     plt.show()
 
 #     # Plot learning curves
-#     for model, label in zip(models, labels):
-#         plt.figure(figsize=(10, 7))
-#         plot_learning_curve(model, X_train, y_train, label, cv=cv)
-#         plt.show()
+    for model, label in zip(models, labels):
+        plt.figure(figsize=(10, 7))
+        plot_learning_curve(model, X_train, y_train, label, cv=cv)
+        plt.show()
